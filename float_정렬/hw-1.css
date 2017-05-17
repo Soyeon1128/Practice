@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 800px;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+}
+.wrapper div{
+    line-height: 200px;
+    text-align: center;
+    float: right;
+}
+.first{
+    width: 200px;
+    height: 800px;
+}
+.second{
+    width: 400px;
+    height: 400px;
+}
+.third{
+    width: 400px;
+    height: 400px;
+}
+.fourth{
+    width: 200px;
+    height: 800px;
+    float: right;
+    margin-top: -400px;
+}
+.nine-ten{
+    width: 200px;
+    height: 400px;
+}
+.eleven-twelve{
+    width: 200px;
+    height: 400px;
+}
+.first div{
+    width: 200px;
+    height: 200px;
+    border: 0px;
+}
+.second div{
+    width: 200px;
+    float: left;
+}
+.third div{
+    width: 200px;
+    height: 200px;
+}
+.fourth div{
+    width: 200px;
+    height: 200px;
+}
+.wrapper > .box-color > div:nth-child(1){
+    background: #999
+}
+.wrapper > .box-color > div:nth-child(2){
+    background: #aaa;
+}
+.wrapper > .box-color > div:nth-child(3){
+    background: #bbb;
+}
+.wrapper > .box-color > div:nth-child(4){
+    background: #ccc;
+}
+.nine, .eleven{
+    background: #999;
+}
+.ten, .twelve{
+    background: #aaa;
+}
