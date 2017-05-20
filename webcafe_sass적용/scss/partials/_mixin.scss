@@ -1,0 +1,24 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin icon-font($icon) {
+    content: "#{$icon}";
+    font-family: 'webcafeIcon';
+    position: relative;
+    top: 2px;
+}
+
+@mixin gray-bg {
+    background-color: #eee linear-gradient(to bottom, #eee, #ccc);
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+@mixin orange-gradiant {
+    background: linear-gradient(to bottom, #eaac2e 0%, #f2752e 35%, #f2752e 70%, #eaac2e 100%);
+}
