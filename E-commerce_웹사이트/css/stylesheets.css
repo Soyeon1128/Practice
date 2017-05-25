@@ -1,0 +1,16 @@
+.logo img {
+  height: 63px;
+  width: auto;
+  float: left;
+  margin-top: 42px; }
+
+.search-form {
+  padding: 0 21px; }
+
+.search-form input {
+  margin-top: 10px;
+  padding: 0 0 0 10px;
+  border: 2px solid #000;
+  width: 380px;
+  height: 42px;
+  font-size: 1.4rem; }
