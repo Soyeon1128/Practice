@@ -42,7 +42,7 @@
   overflow: hidden;
   background: url(../../images/icons/icons.png) no-repeat;
   background-size: cover;
-  background-position: 0 -141px !important;
+  background-position: 0 -141px;
   border: none;
 }
 
@@ -85,6 +85,35 @@
 .menu a {
   color: #4b4b4b;
   text-decoration: none;
+}
+
+.filter {
+  text-align: center;
+  line-height: 42px;
+  position: relative;
+}
+
+.filter::before {
+  display: block;
+  content: "";
+  background: url(../../images/icons/icons.png) no-repeat;
+  background-size: cover;
+  background-position: 0 -43px;
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  top: 15px;
+  left: 640px;
+}
+
+.filter span {
+  font-weight: 500;
+  color: #bd1d31;
+}
+
+main .row-2 {
+  background: #f0f0f0;
+  border-top: 2px solid #bd1d31;
 }
 
 .show-grid {
