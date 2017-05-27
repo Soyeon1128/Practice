@@ -86,10 +86,16 @@
   text-decoration: none;
 }
 
+main .row-2 {
+  background: #f0f0f0;
+  border-top: 2px solid #bd1d31;
+}
+
 .filter {
-  text-align: center;
   line-height: leading(2);
   position: relative;
+  height: leading(2);
+  overflow: hidden;
 }
 
 .filter::before {
@@ -105,14 +111,13 @@
   left: 640px;
 }
 
-.filter span {
-  font-weight: 500;
-  color: #bd1d31;
+.filter-close {
+  text-align: center;
 }
 
-main .row-2 {
-  background: #f0f0f0;
-  border-top: 2px solid #bd1d31;
+.filter span {
+  font-weight: 700;
+  color: #bd1d31;
 }
 
 /*# sourceMappingURL=../../map/stylesheets.css.map */
