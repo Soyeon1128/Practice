@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Nanum Square';
+  src: url("fonts/NanumSquareOTFRegular.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square B';
+  src: url("fonts/NanumSquareOTFBold.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square L';
+  src: url("fonts/NanumSquareOTFLight.otf");
+}
+
+@font-face {
+  font-family: 'Nanum Square EB';
+  src: url("fonts/NanumSquareOTFExtraBold.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK';
+  src: url("fonts/NotoSansCJKkr-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK Black';
+  src: url("fonts/NotoSansCJKkr-Black.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK B';
+  src: url("fonts/NotoSansCJKkr-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK DemiLight';
+  src: url("fonts/NotoSansCJKkr-DemiLight.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK L';
+  src: url("fonts/NotoSansCJKkr-Light.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK M';
+  src: url("fonts/NotoSansCJKkr-Medium.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK Thin';
+  src: url("fonts/NotoSansCJKkr-Thin.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans Mono';
+  src: url("fonts/NotoSansMonoCJKkr-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Noto Sans Mono B';
+  src: url("fonts/NotoSansMonoCJKkr-Bold.otf");
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans';
+  src: url("fonts/Spoqa Han Sans Regular_subset.ttf");
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans B';
+  src: url("fonts/Spoqa Han Sans Bold_subset.ttf");
+}
+
+@font-face {
+  font-family: 'Spoqa Han Sans Thin';
+  src: url("fonts/Spoqa Han Sans Thin_subset.ttf");
+}
+
+/*# sourceMappingURL=../../map/fonts.css.map */
