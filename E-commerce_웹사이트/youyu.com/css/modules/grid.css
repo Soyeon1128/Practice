@@ -217,6 +217,10 @@
   background: #bd1d31;
 }
 
+.banner {
+  padding-left: 10px;
+}
+
 @font-face {
   font-family: 'Nanum Square';
   src: url("fonts/NanumSquareOTFRegular.otf");
