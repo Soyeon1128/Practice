@@ -221,6 +221,35 @@
   padding-left: 10px;
 }
 
+.best-seller {
+  text-align: center;
+}
+
+.best-seller h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.best-item {
+  display: inline-block;
+  height: 357px;
+}
+
+.best-item1, .best-item2, .best-item3, .best-item4 {
+  display: inline-block;
+  text-align: center;
+  height: 357px;
+  border: 1px solid #000;
+}
+
+.best-item span {
+  display: block;
+}
+
+.best-item a {
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Nanum Square';
   src: url("fonts/NanumSquareOTFRegular.otf");
