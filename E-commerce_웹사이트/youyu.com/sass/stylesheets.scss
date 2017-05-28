@@ -8,6 +8,9 @@
 .gap {
     margin-bottom: 21px;
 }
+.gap-t {
+    margin-top: 21px;
+}
 .logo img{
     height: 63px;
     width: auto;
@@ -49,7 +52,7 @@
 }
 .sign-up, .sign-in {
     // margin-top: 63px;
-    color: #bd1d31;
+    color: #991717;
     text-decoration: none;
     font-weight: bold;
 }
@@ -103,7 +106,7 @@
 }
 .filter span {
     font-weight: 700;
-    color: #bd1d31;
+    color: #991717;
 }
 .filter:hover, .filter:focus{
     display: block;
@@ -190,13 +193,21 @@
 }
 .banner{
     padding-left: 10px;
+    height: leading(22);
 }
 .best-seller{
     text-align: center;
+    margin-bottom: 21px;
 }
 .best-seller h2{
-    margin: 0;
+    margin: 0 0 21px 10px;
     padding: 0;
+    float: left;
+    font-size: 21px;
+    font-weight: 500;
+    color: #333;
+    height: 21px;
+    line-height: 21px;
 }
 .best-item{
     display: inline-block;
@@ -204,9 +215,15 @@
 }
 .best-item1, .best-item2, .best-item3, .best-item4{
     display: inline-block;
-    text-align: center;
+    // text-align: center;
     height: leading(17);
-    border: 1px solid #000; 
+    border: 1px solid #d3d3d3; 
+    margin: 0 7px;
+    background: #fff;
+    position: relative;
+}
+.best-item a{
+    padding-top: 21px;
 }
 .best-item span{
     display: block;
@@ -214,5 +231,87 @@
 .best-item a{
     margin: 0;
 }
+.best-text1, .best-text2, .best-text3, .best-text4{
+    position: absolute;
+    top: 252px;
+    left: 20px;
+    text-align: left;
+}
+.best-text1 span:first-child, .best-text2 span:first-child, .best-text3 span:first-child, .best-text4 span:first-child{
+    color: #333;
+    font-weight: 700;
+}
+.best-text1 span:nth-child(2), .best-text2 span:nth-child(2), .best-text3 span:nth-child(2), .best-text4 span:nth-child(2){
+    color: #666;
+}
+.best-text1 span:nth-child(3), .best-text2 span:nth-child(3), .best-text3 span:nth-child(3), .best-text4 span:nth-child(3){
+    color: #991717;
+    font-size: 17.5px;
+    margin-top: 18px;
+}
+.brand h2{
+    margin: 0 0 0 10px;
+    font-size: 21px;
+    font-weight: 500;
+    color: #333;
+    height: 21px;
+    line-height: 21px;
+}
+.brand a{
+    margin: 0;
+}
+.brand1, .brand2, .brand3, .brand4{
+    display: inline-block;
+    position: relative;
+    margin-top: 21px;
+    height: leading(7);
+}
+.brand1 h4:first-child, .brand2 h4:first-child, .brand3 h4:first-child, .brand4 h4:first-child{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: 27px;
+    color: #fff;
+    text-shadow: -2px 0 2px #666, 0 2px 2px #666, 2px 0 2px #666, 0 -2px 2px #666;
+    height: leading(6);
+    line-height: leading(6);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.brand1 h4:first-child{
+    margin-left: -51px;
+}
+.brand2 h4:first-child{
+    margin-left: -37px;
+}
+.brand3 h4:first-child{
+    margin-left: -61px;
+}
+.brand4 h4:first-child{
+    margin-left: -86px;
+}
+.brand1 span, .brand2 span, .brand3 span, .brand4 span{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+.brand1::before, .brand2::before, .brand3::before, .brand4::before{
+    content: "";
+    display: block;
+    width: 250px;
+    height: 21px;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+
 // >>>>>>>> .is-nesting 사용하는 방식으로 수정할 것!
 
