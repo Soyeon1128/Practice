@@ -359,6 +359,70 @@
   left: 0;
 }
 
+.new {
+  text-align: center;
+  margin-bottom: 21px;
+}
+
+.new h2 {
+  margin: 0 0 21px 10px;
+  padding: 0;
+  float: left;
+  font-size: 21px;
+  font-weight: 500;
+  color: #333;
+  height: 21px;
+  line-height: 21px;
+}
+
+.new-item {
+  display: inline-block;
+  height: 357px;
+}
+
+.new-item1, .new-item2, .new-item3, .new-item4 {
+  display: inline-block;
+  height: 357px;
+  border: 1px solid #d3d3d3;
+  margin: 0 7px;
+  background: #fff;
+  position: relative;
+}
+
+.new-item a {
+  padding-top: 21px;
+}
+
+.new-item span {
+  display: block;
+}
+
+.new-item a {
+  margin: 0;
+}
+
+.new-text1, .new-text2, .new-text3, .new-text4 {
+  position: absolute;
+  top: 252px;
+  left: 20px;
+  text-align: left;
+}
+
+.new-text1 span:first-child, .new-text2 span:first-child, .new-text3 span:first-child, .new-text4 span:first-child {
+  color: #333;
+  font-weight: 700;
+}
+
+.new-text1 span:nth-child(2), .new-text2 span:nth-child(2), .new-text3 span:nth-child(2), .new-text4 span:nth-child(2) {
+  color: #666;
+}
+
+.new-text1 span:nth-child(3), .new-text2 span:nth-child(3), .new-text3 span:nth-child(3), .new-text4 span:nth-child(3) {
+  color: #991717;
+  font-size: 17.5px;
+  margin-top: 18px;
+}
+
 @font-face {
   font-family: 'Nanum Square';
   src: url("fonts/NanumSquareOTFRegular.otf");
