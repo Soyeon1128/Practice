@@ -18,8 +18,8 @@ console.log( findKim(["Queen", "Tod", "Kim"]));
 
 
 function findKim(seoul){
-  var idx = seoul.indexOf('Kim');
+  var location = seoul.indexOf('Kim');
   //함수를 완성하세요
 
-  return "김서방은 " + idx + "에 있다";
+  return "김서방은 " + location + "에 있다";
 }
