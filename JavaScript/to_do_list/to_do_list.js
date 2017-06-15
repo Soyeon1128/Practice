@@ -29,6 +29,8 @@
         _.appendChild(li, label);
         _.appendChild(ul, li);
 
+        input_box.value = "";
+
         return false;
     };
 
