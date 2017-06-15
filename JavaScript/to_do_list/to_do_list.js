@@ -53,7 +53,14 @@
         return false;
     };
     
+    var clear_all = _.selector('.clear-all');
+    
+    var div_to_delete = _.selector('.list-area');
+    var ul_to_delete = _.selector('.list-to-do');
 
+    clear_all.onclick = function() {
+        div_to_delete.removeChild(ul_to_delete);
+    };
  
 
 
