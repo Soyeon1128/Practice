@@ -1,13 +1,6 @@
 (function(global, document, _){
  
     'use strict';
-
-    //  <li>
-    //      <label for="">
-    //          <input type="checkbox">
-    //          text
-    //      </label>
-    //  </li>
     
     var addition = _.selector('.btn-add');
     var input_box = _.selector('.what-to-do');
