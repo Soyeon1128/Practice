@@ -26,14 +26,11 @@
      
         _.appendChild(label, checkbox);
         _.appendChild(label, text);
-
         _.appendChild(li, label);
-        
         _.appendChild(ul, li);
 
         return false;
     };
-
 
     var deletion = _.selector('.btn-delete');
     
@@ -54,12 +51,10 @@
     };
     
     var clear_all = _.selector('.clear-all');
-    
-    var div_to_delete = _.selector('.list-area');
-    var ul_to_delete = _.selector('.list-to-do');
 
     clear_all.onclick = function() {
-        div_to_delete.removeChild(ul_to_delete);
+        var ul_to_delete = _.selector('.list-to-do');
+        ul_to_delete.textContent = "";
     };
  
 
