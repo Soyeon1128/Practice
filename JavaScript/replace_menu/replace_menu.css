@@ -1,3 +1,10 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+}
 .a11y-hidden {
     overflow: hidden;
     display: block;
@@ -6,15 +13,17 @@
 }
 .input-container {
     width: 100%;
-    height: 60px;
+    height: 80px;
+    background: darkblue;
 }
 .input-area {
-    line-height: 60px;
+    line-height: 80px;
+    text-align: center;
 }
 .menu-to-add {
-    width: 350px;
-    height: 30px;
-    font-size: 20px;
+    width: 300px;
+    height: 28px;
+    font-size: 16px;
     border: 3px solid #000;
     border-radius: 5px;
     padding-left: 5px;
@@ -22,10 +31,43 @@
 }
 .btn-input {
     width: 65px;
-    height: 35px;
+    height: 33px;
     padding: 0;
     background: #000;
     color: #fff;
     border: none;
     border-radius: 5px;
+}
+.output-area {
+    margin: 20px;
+}
+.output-heading {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin: 50px 0;
+}
+.replace-area {
+    margin-top: 40px;
+}
+.replace-list {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+.replace-item {
+    font-size: 15px;
+    line-height: 45px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: darkblue;
+    color: #fff;
+    width: 110px;
+    height: 45px;
+    display: inline-block;
+    text-align: center;
+}
+.active {
+    background: #000;
 }
