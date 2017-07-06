@@ -52,7 +52,7 @@
             template += '<article class="diary-item">'+
                 '<div class="message-header">'+
                 '<h5 class="diary-item-title">'+diary.title+'</h5>'+
-                '<button data-remove-index="'+diary.id+'" type="button" class="delete" aria-label="메모 아이템 제거"></button>'+
+                '<button data-remove-index="'+diary.id+'" type="button" class="delete" aria-label="메모 아이템 제거">삭제</button>'+
                 '</div>'+
                 '<div class="message-body">'+
                 '<p class="diary-item-content">'+diary.image+'</p>'+
