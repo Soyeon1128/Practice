@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>오늘뭐함 - 일기장</title>
+    <link rel="stylesheet" href="./css/diary.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="diary">
+            <form action="" class="content">
+                <fieldset>
+                    <legend></legend>
+                        <label for="title">제목</label>
+                        <input type="text" id="title" placeholder="제목을 입력하세요.">
+                        <label for="image">이미지</label>
+                        <input type="text" id="image" placeholder="이미지를 추가하세요.">
+                        <label for="text">내용</label>
+                        <input type="text" id="text" placeholder="오늘 한 일을 적어보세요.">
+                </fieldset>
+            </form>
+            <div class="btn-group">
+                <button type="button" class="button btn-save is-save">저장</button>
+                <button type="button" class="button btn-cancle is-cancel">취소</button>
+            </div>
+        </div>
+        <div class="diary-item-container">
+
+        </div>
+    </div>
+<script src="./js/diary.js"></script>
+</body>
+</html>
+
+
+
