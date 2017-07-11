@@ -114,14 +114,14 @@
         var keys = Object.keys(diary_item);
         var values = Object.values(diary_item);
         
-        var post_text = keys[0] + "=" + values[0] + "&" + keys[1] + "=" + values[1] + "&" + keys[2] + "=" + values[2];    
+        var post_text = JSON.stringify(diary_item);
         
         // 비동기 통신 API
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = saveCommunication;
         xhr.open('POST', diary_api_address, true);
         
-        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.setRequestHeader("Content-type", "application/json");
         
         xhr.send(post_text);
         
