@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Accordion Component 실습
+        link(rel="stylesheet", href="./css/main.css")
+        link(rel="stylesheet", href="/node_modules/bulma/css/bulma.css")      
+        script(src="/node_modules/jquery/dist/jquery.min.js")
+    body
+        .container
+            .column.is-6.is-offset-3
+                h1.title.is-1 Accordion Component :-)
+                p.subtitle.is-3 Click each category!
+
+            .column.is-4.is-offset-3.category
+                h3.category-heading
+                    a.toggle-link Category1
+                ul.category-list
+                    li.category-item Hello, world! This is the item 1-1 of accodion.
+                    li.category-item Hello, world! This is the item 1-2 of accodion.
+                    li.category-item Hello, world! This is the item 1-3 of accodion.
+                    li.category-item Hello, world! This is the item 1-4 of accodion.
+                
+                h3.category-heading
+                    a.toggle-link Category2
+                ul.category-list 
+                    li.category-item Hello, world! This is the item 2-1 of accodion.
+                    li.category-item Hello, world! This is the item 2-2 of accodion.
+                    li.category-item Hello, world! This is the item 2-3 of accodion.
+                    li.category-item Hello, world! This is the item 2-4 of accodion.
+                
+                h3.category-heading
+                    a.toggle-link Category3
+                ul.category-list 
+                    li.category-item Hello, world! This is the item 3-1 of accodion.
+                    li.category-item Hello, world! This is the item 3-2 of accodion.
+                    li.category-item Hello, world! This is the item 3-3 of accodion.
+                    li.category-item Hello, world! This is the item 3-4 of accodion.
+                
+                h3.category-heading
+                    a.toggle-link Category4
+                ul.category-list 
+                    li.category-item Hello, world! This is the item 4-1 of accodion.
+                    li.category-item Hello, world! This is the item 4-2 of accodion.
+                    li.category-item Hello, world! This is the item 4-3 of accodion.
+                    li.category-item Hello, world! This is the item 4-4 of accodion.
+
+        script(src="./js/main.js")
