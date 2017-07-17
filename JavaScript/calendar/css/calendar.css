@@ -1,24 +1,27 @@
-.wrap {
-	width: 500px;
+/*.wrapper {
+	width: 100%;
+    height: 100vh;
 	margin: 0 auto;
-}
-.btn-holder {
+}*/
+.date-header {
 	text-align: center;
-	margin: 10px 0 10px 0;
+	margin: 20px;
+    font-size: 30px;
 }
 #calendar table {
 	border-collapse: collapse;
 	text-align: center;
+    margin: 0 auto;
 }
 #calendar table thead td {
-	height: 30px;
+	height: 80px;
 	font-weight: bold;
 }	
 #calendar table td {
 	border: solid 1px #000;
 }
-#calendar table td.date-cell {
-	height: 50px;
+#calendar table td.date {
+	height: 80px;
 }
 #calendar table td.sun {
 	color: red;
