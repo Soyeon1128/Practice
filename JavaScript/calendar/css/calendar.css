@@ -1,12 +1,33 @@
-/*.wrapper {
+html {
+	margin: 0;
+}
+body {
+	margin: 0;
+}
+.header-wrapper {
+	position: fixed;
+	top: 0;
 	width: 100%;
-    height: 100vh;
-	margin: 0 auto;
+	height: 80px;;
+	background: lightgreen;
+	text-align: center;
+	opacity: 0.7;
+}
+.content-wrapper {
+	position: relative;
+	margin-top: 80px;
+	padding-top: 10px;
+}
+/*.calendar-wrapper {
+	margin-top: 100px;
 }*/
 .date-header {
 	text-align: center;
 	margin: 20px;
-    font-size: 30px;
+    font-size: 20px;
+}
+#calender {
+	/*height: 100vh;*/
 }
 #calendar table {
 	border-collapse: collapse;
@@ -14,14 +35,15 @@
     margin: 0 auto;
 }
 #calendar table thead td {
-	height: 80px;
+	height: 70px;
+	width: 90px;
 	font-weight: bold;
 }	
 #calendar table td {
 	border: solid 1px #000;
 }
 #calendar table td.date {
-	height: 80px;
+	height: 70px;
 }
 #calendar table td.sun {
 	color: red;
@@ -32,4 +54,56 @@
 #calendar table td.not-this-month {
 	background: #ddd;
 	color: #999;
+}
+.board-active {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -450px;
+	width: 900px;
+	height: 625px;
+	background: #fff;
+	border: 2px solid #000;
+	/*opacity: 0.5;*/
+}
+.board-date {
+	font-size: 30px;
+	margin: 30px;
+	text-align: center;
+}
+.btn-add {
+	width: 450px;
+	height: 50px;
+	font-size: 20px;
+	margin-left: 220px;
+}
+.post-list {
+	padding: 50px;
+	/*background: yellow;*/
+}
+.post-item {
+	list-style: none;
+	border: 1px solid #000;
+	/*background: green;*/
+	width: 100%;
+	height: 200px;
+	/*padding: 20px;*/
+	position: relative;
+}
+.post-item input {
+	width: 570px;
+	height: 150px;
+	margin: 20px;
+}
+.btn-group {
+	position: absolute;
+	top: 50px;
+	right: 60px;
+	width: 60px;
+	height: 40px;
+}
+.btn-group button{
+	width: 50px;
+	height: 30px;
+	margin: 3px 0;
 }

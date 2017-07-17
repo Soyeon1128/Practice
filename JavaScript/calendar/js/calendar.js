@@ -1,3 +1,4 @@
+// Calendar
 (function(global, $){
     
     'use strict';
@@ -36,7 +37,7 @@
             arrTable.push('<thead><tr>');
             
             var arrWeek = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-            console.log(arrWeek);
+
             // 토, 일에 'sat', 'sun' 클래스 추가
             for(var i=0, len=arrWeek.length; i<len; i++) {
                 var weekendClass = '';
@@ -69,16 +70,14 @@
                 weekendClass += i % 7 == 0 ? 'sun' : '';
 				weekendClass += i % 7 == 6 ? 'sat' : '';
 
-                arrTable.push('<td class="'+weekendClass+'">' + targetDate.getDate() + '</td>') ;
+                arrTable.push('<td class="'+weekendClass+'"><a href="" data-targetdate="' + targetDate + '">' + targetDate.getDate() + '</a></td>') ;
                 targetDate.setDate(targetDate.getDate() + 1);
-
                 if(i % 7 ==6) {
                     arrTable.push('</tr>');
                     if(currentMonth.getMonth() != targetDate.getMonth()) {
                         break;
                     }
                 }
-
             }
 
             arrTable.push('</tbody></table>');
@@ -122,5 +121,56 @@
     }
 
     cal.init();
+    // global.calendar = cal;
     
+})(window, window.jQuery);
+
+// Board $ Post
+(function(global, $){
+    
+    'use strict';
+    
+    // Board
+    var day_board = new Board();
+
+    function Board() {
+
+        var $board_link = $('a').on('click', makeBoard);
+        // console.log($board_link);
+
+        function makeBoard(e) {
+            e.preventDefault();
+
+            var board_html = '';
+            var $e_target = $(e.target);
+
+            var post_date = $e_target.data('targetdate');            
+
+            // jQeury 방식
+            board_html += '<div class="board-date">'  + post_date.split(' ').slice(1,4).join(' ') + '</div>'
+            // DOM 방식
+            // board_html += '<div class="board-date">'  + e.target.dataset.targetdate + '</div>'
+
+            board_html += '<button type="button" class="btn-add"><span>add</span></button>'
+            board_html += '<ul class="post-list"></ul>'
+            $('.board-wrapper').html(board_html);
+
+            $('.board-wrapper').addClass('board-active');
+
+            addList();
+        }
+
+    }
+    
+    // Post    
+    function addList() {
+      
+        $('.btn-add').on('click', function(e) {
+            e.preventDefault();
+            var $e_target = $(e.target);
+            $e_target.next()
+            .append('<li class="post-item"><input type="text"><div class="btn-group"><button type="button">save</button><button type="button">modify</button><button type="button">delete</button></div></li>');
+            }
+        )};
+
 })(window, window.jQuery);
